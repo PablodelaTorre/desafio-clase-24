@@ -39,7 +39,7 @@ app.get('/',(req,res) => {
 })
 
 
-app.get("/", (req, res) => {
+app.get("/session", (req, res) => {
     if(req.session.contador){
         req.session.contador ++
         res.send(`<h1>Hola ${getNombreSession(req)}.</h1>`)
