@@ -8,6 +8,12 @@
     <title><%= title %></title>
 </head>
 <body>
+
+    <form class="formularioLog" action="/session" method="post">
+        <input type="text" name="nombreLogIn" placeholder="Ingresa tu nombre">
+        <button type="submit">Enviar</button>
+    </form>
+
     <h1 class="title"><%= title %></h1>
     <form class="formularioAgregar" action="/productos" enctype="multipart/form-data" method="post">
         <label for="title">Title</label>
